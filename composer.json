@@ -1,0 +1,21 @@
+{
+    "name": "bajankristof/dumper",
+    "description": "A dead simple PHP var dumper created for those who can not afford PHP 7.0+",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Baján Kristóf",
+            "email": "bajankristof@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/dump.php"
+        ],
+        "psr-4": {
+            "bajankristof\\": "src/"
+        }
+    },
+    "require": {}
+}
