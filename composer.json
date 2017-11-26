@@ -2,6 +2,7 @@
     "name": "bajankristof/dumper",
     "description": "A dead simple PHP var dumper created for those who can not afford PHP 7.0+",
     "type": "library",
+    "keywords": ["dumper", "var-dumper"],
     "license": "MIT",
     "authors": [
         {
@@ -17,5 +18,7 @@
             "bajankristof\\": "src/"
         }
     },
-    "require": {}
+    "require": {},
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
