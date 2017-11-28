@@ -51,6 +51,10 @@ pre.dump span.arrow {
     margin: 0 8px;
 }
 
+pre.dump span.public {
+    color: #ECEFF1;
+}
+
 pre.dump span.protected {
     color: #90A4AE;
 }
