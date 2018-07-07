@@ -1,6 +1,6 @@
 <?php
 
-namespace bajankristof;
+// namespace bajankristof\src;
 
 
 class Dumper
@@ -15,14 +15,14 @@ class Dumper
 	 * Tracks the usage count of the Dumper.
 	 * @var int
 	 */
-	private $usage = 0;
+	private static $usage = 0; 
 
 	/**
 	 * Contains the patterns to be replaced
 	 * with <span></span> tags.
 	 * @var array
 	 */
-	protected $patterns = [
+	protected  static $patterns = [
 		'empty' => [
 			'/(?<=\(0\)\s\{)\n()\s*?(?=\})/'
 		],
@@ -91,9 +91,9 @@ class Dumper
 	 *
 	 * @return void
 	 */
-	public function dump($argument)
+	public static function dump($argument)
 	{
-		if (!$this->usage) {
+		if (! self::$usage) {
 			echo '<style type="text/css">';
 			echo file_get_contents(
 				__DIR__ . '/dump.css'
@@ -105,14 +105,22 @@ class Dumper
 
 		ob_start();
 		var_dump($argument);
-		echo $this->format(
+		echo self::format(
 			ob_get_clean()
 		);
 
 		echo '</pre>';
 
-		$this->usage += 1;
+		self::$usage += 1;
 	}
+
+	public function dd($argument) 
+	{
+		self::dump($argument);
+		die();
+	}
+
+	
 
 	/**
 	 * Format the row output of a PHP
@@ -124,7 +132,7 @@ class Dumper
 	 */
 	protected function format($dump)
 	{
-		foreach ($this->patterns as $class => $patterns) {
+		foreach (self::$patterns as $class => $patterns) {
 			foreach ($patterns as $pattern) {
 				$dump = preg_replace_callback($pattern, function ($matches) use ($class) {
 					return "<span class=\"$class\">" . $matches[1] . '</span>';
