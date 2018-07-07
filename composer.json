@@ -8,12 +8,12 @@
         {
             "name": "Baján Kristóf",
             "email": "bajankristof@gmail.com"
+        },{
+            "name": "Zabuza Momoshi",
+            "email": "zabuza225@gmail.com"
         }
     ],
-    "contributor":{
-        "name": "Zabuza Momoshi",
-        "email": "zabuza225@gmail.com"
-    },
+
     "autoload": {
         "files": [
             "src/dump.php"
