@@ -1,16 +1,16 @@
 ## Installation
 ### Composer
 ```
-composer require bajankristof/dumper
+composer require zabuza225/dumper
 ```
 
 ### Manual
-Just download the `src` directory and call the namespace `bajankristof/dumper`
+Just download the `src` directory and call the namespace `zabuza225/dumper`
 
 
 ## Usage
 Call namespace
-use bajankristof/dumper;
+use zabuza225/dumper;
 
 As simple as calling `Dumper::dump(...)` or `Dumper::dd(...)`, just like `var_dump(...)` though the results will be different... See for yourself :smirk:
 
@@ -19,4 +19,4 @@ As simple as calling `Dumper::dump(...)` or `Dumper::dd(...)`, just like `var_du
 ## Styles
 To change the looks of the dump just go ahead and edit the `dump.css` file. (Be aware though that this might get overwritten by a `composer update`.)
 
-le grand honneur reveint a "BAJANKRISTOF/dumper" qui ecrit ce  code que j'ai à peine retouché
+Le grand honneur reveint a "BAJANKRISTOF/dumper" qui à ecri ce code que j'ai à peine retouché
