@@ -5,12 +5,12 @@ composer require zabuza225/dumper
 ```
 
 ### Manual
-Just download the `src` directory and call the namespace `zabuza225/dumper`
+Just download the `src` directory and call the namespace `bajankristof/dumper`
 
 
 ## Usage
 Call namespace
-use zabuza225/dumper;
+use bajankristof/dumper;
 
 As simple as calling `Dumper::dump(...)` or `Dumper::dd(...)`, just like `var_dump(...)` though the results will be different... See for yourself :smirk:
 

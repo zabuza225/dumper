@@ -1,6 +1,6 @@
 <?php
 
-// namespace bajankristof\src;
+namespace bajankristof\src;
 
 
 class Dumper
