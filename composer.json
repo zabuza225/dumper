@@ -1,5 +1,5 @@
 {
-    "name": "bajankristof/dumper",
+    "name": "zabuza225/dumper",
     "description": "A dead simple PHP var dumper created for those who can not afford PHP 7.0+",
     "type": "library",
     "keywords": ["dumper", "var-dumper"],
@@ -10,6 +10,10 @@
             "email": "bajankristof@gmail.com"
         }
     ],
+    "contributor":{
+        "name": "Zabuza Momoshi",
+        "email": "zabuza225@gmail.com"
+    },
     "autoload": {
         "files": [
             "src/dump.php"

@@ -1,14 +1,1 @@
-.DS_Store
-.DS_Store?
-.Spotlight-V100
-.Trashes
-.log
-.sql
-.sqlite
-.sass-cache*
-Thumbs.db
-Ehthumbs.db
-.idea
-
-/vendor/
-/test.php
+/vendor/*
