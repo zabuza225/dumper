@@ -2,7 +2,6 @@
 
 namespace bajankristof\src;
 
-
 class Dumper
 {
 	/**
@@ -114,14 +113,13 @@ class Dumper
 		self::$usage += 1;
 	}
 
-	public function dd($argument) 
+	public static function dd($argument) 
 	{
 		self::dump($argument);
 		die();
 	}
 
 	
-
 	/**
 	 * Format the row output of a PHP
 	 * var_dump call.
@@ -130,7 +128,7 @@ class Dumper
 	 *
 	 * @return mixed
 	 */
-	protected function format($dump)
+	protected static function format($dump)
 	{
 		foreach (self::$patterns as $class => $patterns) {
 			foreach ($patterns as $pattern) {
